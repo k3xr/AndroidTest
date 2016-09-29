@@ -19,10 +19,9 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button"
         android:layout_centerHorizontal="true"
         android:onClick="goTo2Button"
-        android:id="@+id/@+id/button2" />
+        android:id="@+id/button2" />
 
     <Button
         android:layout_width="wrap_content"
@@ -33,5 +32,32 @@
         tools:text="@string/button_text"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/my_button"
+        android:layout_toStartOf="@+id/my_button"
+        android:layout_marginBottom="39dp"
+        android:id="@+id/saveButton" />
+
+    <Button
+        android:text="Load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/saveButton"
+        android:layout_toEndOf="@+id/my_button"
+        android:id="@+id/loadButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textDisplay" />
 
 </RelativeLayout>
