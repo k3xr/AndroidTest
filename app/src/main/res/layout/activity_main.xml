@@ -10,53 +10,33 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="oscarf.test.MainActivity">
 
-    <TextView
-        android:text="@string/test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:onClick="goTo2Button"
-        android:id="@+id/button2" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/my_button"
-        tools:text="@string/button_text"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:text="@string/saveButton_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/my_button"
-        android:layout_toStartOf="@+id/my_button"
-        android:layout_marginBottom="39dp"
-        android:id="@+id/saveButton" />
-
-    <Button
-        android:text="@string/loadButton_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/saveButton"
-        android:layout_toEndOf="@+id/my_button"
-        android:id="@+id/loadButton" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:layout_below="@+id/button2"
+        android:labelFor="@+id/textDisplay"
+        android:id="@+id/textDisplay"
+        android:layout_marginTop="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/loadButton_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loadButton"
+        android:layout_below="@+id/textDisplay"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
-        android:id="@+id/textDisplay" />
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:text="@string/saveButton_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveButton"
+        android:layout_below="@+id/loadButton"
+        android:layout_alignStart="@+id/loadButton" />
 
 </RelativeLayout>
