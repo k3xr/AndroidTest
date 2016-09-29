@@ -28,13 +28,12 @@
         android:layout_height="wrap_content"
         android:text="New Button"
         android:id="@+id/my_button"
-        android:onClick="testButton"
         tools:text="@string/button_text"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:text="Save"
+        android:text="@string/saveButton_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/my_button"
@@ -43,7 +42,7 @@
         android:id="@+id/saveButton" />
 
     <Button
-        android:text="Load"
+        android:text="@string/loadButton_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/saveButton"
