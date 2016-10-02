@@ -3,4 +3,7 @@
     <string name="test3">Come on guys</string>
     <string name="loadButton_text">Load</string>
     <string name="saveButton_text">Save</string>
+    <string name="escuelaButton_text">Escuela</string>
+    <string name="alucheButton_text">Aluche</string>
+    <string name="title_activity_bus_schedules">Bus schedules</string>
 </resources>

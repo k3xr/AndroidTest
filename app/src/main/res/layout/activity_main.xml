@@ -39,4 +39,24 @@
         android:layout_below="@+id/loadButton"
         android:layout_alignStart="@+id/loadButton" />
 
+    <Button
+        android:text="@string/escuelaButton_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/escuelaButton"
+        android:layout_marginStart="46dp"
+        android:layout_alignBaseline="@+id/alucheButton"
+        android:layout_alignBottom="@+id/alucheButton"
+        android:layout_alignStart="@+id/saveButton" />
+
+    <Button
+        android:text="@string/alucheButton_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alucheButton"
+        android:layout_marginBottom="117dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/saveButton"
+        android:layout_marginEnd="43dp" />
+
 </RelativeLayout>
